@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css"
+</head>
+
+<body class="background">
+    <!-- Game Title -->
+    <div class="jumbotron jumbotron-fluid" style= "background-color: rgb(255, 1, 1); height: 10vh; width: 99vh;" >
+        <div class="container">
+            <h1 class="display-6">Guess That Mario Character!</h1>
+        </div>
+    </div>
+<!-- images, questions, and answers will be held here -->
+    <div class="gamecontent">
+
+    </div>
+
+
+
+
+    <script>
+
+    $(document).ready(function() {
+    const f = document.getElementsByClassName('display-6');
+    setInterval(function() {
+        f.style.display = (f.style.display == 'none' ? '' : 'none');
+    }, 1000);
+
+});
+    
+    
+    
+    
+    </script>
+</body>
+
+</html>
