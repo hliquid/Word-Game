@@ -1,12 +1,51 @@
-const mariochar = [ { Name: "Mario", image: 'Mario.png' }, 
-{ Name: "Luigi", image: 'Luigi.png' }, 
-{ Name: "Princess Peach", image: 'PrincessPeach.png' },
-{ Name: "King Boo", image: 'KingBoo.png' },
-{ Name: "Bowser", image: 'Bowser.png' },
-{ Name: "Wario", image: 'Wario.png' },
-{ Name: "Waluigi", image: 'Waluigi.png' },
-{ Name: "Toad", image: 'Toad.png' },
-{ Name: "Yoshi", image: 'Yoshi.png' },
-{ Name: "Birdo", image: 'Birdo.png' }
-];
+const LetterGuess = ["a", 
+"b", 
+"c", 
+"d", 
+"e", 
+"f",
+ "g", 
+ "h", 
+ "i", 
+ "j", 
+ "k", 
+ "l", 
+ "m", 
+ "n", 
+ "o", 
+ "p", 
+ "q", 
+ "r", 
+ "s", 
+ "t", 
+ "u",
+  "v", 
+  "w", 
+  "x", 
+  "y", 
+  "z"]
 
+  let RandomLetter = LetterGuess[Math.floor(Math.random()*LetterGuess.length)];
+  console.log(RandomLetter);
+  let Wins = 0
+  let Losses = 0
+  let GuessLeft = 5
+
+  //When a user presses a key, it will run the following function
+  document.onkeypress = function(event) {
+    let UserGuess = event.key;
+
+    if (UserGuess === RandomLetter){
+      Wins++ ;
+      alert("That's correct!");
+      document.getElementById(UserWins).innerHTML 
+    }else GuessLeft--;
+    if (GuessLeft === 0){
+      Losses++;
+    } 
+    }
+
+    
+    
+  
+  

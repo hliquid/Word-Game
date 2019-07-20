@@ -1,44 +1,6 @@
-/* background image and body styles */
- 
-.background {
-    background-image: url('./assets/background.jpg');
-    height: 100%; 
-    /* Center and scale the image nicely */
-    background-position: unset;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: scroll;
-}
-.display-6{
-    font-family: fantasy;
-    color: black;
-    opacity: 0.7;
-    text-align: center;
-}
-.gamecontent {
-    height: 500px;
-    width: 800px;
-    margin-top: 20px;
-    background-color: black;
-    margin: auto;
-   
-}
-
-.pic {
-    background-color: aqua;
-    height: 300px;
-    width: 210px;
-    margin-top: 100px;
-    margin-left: 75px;
-    float: left;
-
-}
-
-.answer {
-    background-color: aquamarine;
-    height: 400px;
-    width: 500px;
-    float: right;
-    margin-top: 90px;
-    margin-right: 5px;
-}
+body { 
+    width: 50%; 
+    max-width: 800px; 
+    min-width: 480px; 
+    margin: 0 auto; 
+    } 
