@@ -38,14 +38,16 @@ const LetterGuess = ["a",
     if (UserGuess === RandomLetter){
       Wins++ ;
       alert("That's correct!");
-      document.getElementById(UserWins).innerHTML 
+       document.getElementById("wins-total").innerHTML
     }else GuessLeft--;
     if (GuessLeft === 0){
       Losses++;
+      alert("Try again!");
+      document.getElementById("losses-total").innerHTML
     } 
     }
 
-    
+    console.log(Wins)
     
   
   
